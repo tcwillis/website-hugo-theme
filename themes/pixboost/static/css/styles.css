@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    width: 200vw;
+    height: 100%;
+    background: #f5f5fa;
+}
+
+section.highlight {
+    color: #fff;
+}
+
+section.highlight:before {
+    background: url(../img/homepage/backgrounds/gradient-purple-bg.svg) no-repeat;
+    background-size: cover;
+}
+
+section.top-curve:before {
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    border-radius: 50% 50% 0 0;
+}
+
+section.full-curve:before {
+    border-radius: 50%;
+}
+
+section.bottom-curve:before {
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+
+section.section-1 {
+    padding-bottom: 200px;
+    margin-bottom: -250px;
+}
+
+section.section-2 {
+    margin-bottom: -250px;
+    padding-bottom: 300px;
+}
+
+section.section-2:before {
+    background-image: url(../img/homepage/backgrounds/gradient-grey-bg.svg);
+    background-position: bottom center;
+    background-size: 100%;
+}
+
+section.section-3 {
+    margin-bottom: -250px;
+    z-index: 10;
+}
+
+section.section-3:before {
+    background-color: #fff;
+}
+
+section.section-4 .content {
+    padding-top: 350px;
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    padding: 100px;
+}
