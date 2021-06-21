@@ -36,81 +36,91 @@
 
 {{ define "main" }}
 <main>
-  <section id="hero" class="no-frame">
+  <section id="hero">
     <div class="content">
-      <p class="title">INDUSTRY EXPERTS</p>
-      <h1>Make your customers happy<br/> <small>with fast loading images</small></h1>
-      <p class="description">Pixboost Image CDN serves the responsive images using the best format from the closest to your user location.</p>
-      <p class="cta">
-        <a class="btn btn-lg btn-green" href="/customer/#/signup" onclick="window.trackLink('Hero submit','signup_hero')">SIGN UP</a>
-      </p>
-
-    </div>
-    <div class="video">
-      <object type="image/svg+xml" data="/img/v2/homepage/animation-js.svg"></object>
-    </div>
-  </section>
-
-  <section id="how-it-works" class="with-frame">
-    <div class="frame">
-      <div class="content">
-        <p class="title">HOW IT WORKS</p>
-        <div class="text">
-          <div class="heading">
-            <h2>End to End image solution for your website</h2>
-          </div>
-          <p class="description">
-            In addition to API you also get Content Delivery Network with 144 locations worldwide, so the images are served from the closest location to your client.
-            Your web developers would also love our front end integration with popular frameworks like React.
-          </p>
-        </div>
-        <div class="infographic">
-          <div class="card">
-            <img src="/img/v2/homepage/infographic/user-loading-images.png" alt="user loading images"/>
-            <p class="heading">User's Browser</p>
-            <p class="description">
-              Optimised images across all screen sizes and devices.
-            </p>
-          </div>
-          <div class="connection">
-            <p class="right-arrow">&rarr;</p>
-            <p class="left-arrow">&larr;</p>
-          </div>
-          <div class="card">
-            <img src="/img/v2/homepage/infographic/content-delivery-network.png" alt="content delivery network"/>
-            <p class="heading">Content Delivery Network</p>
-            <p class="description">
-              Serve from the closest to user location  from CDN immediately. 140+ locations all over the World.
-            </p>
-          </div>
-          <div class="connection">
-            <p class="right-arrow">&rarr;</p>
-            <p class="left-arrow">&larr;</p>
-          </div>
-          <div class="card">
-            <img src="/img/v2/homepage/infographic/image-api.png" alt="image api"/>
-            <p class="heading">Image API</p>
-            <p class="description">
-              Pixboost downloads image, optimises / transforms it on CDN for 30 days.
-            </p>
-          </div>
-          <div class="connection">
-            <p class="right-arrow">&rarr;</p>
-            <p class="left-arrow">&larr;</p>
-          </div>
-          <div class="card">
-            <img src="/img/v2/homepage/infographic/images-source.png" alt="images source"/>
-            <p class="heading">Your Image Sources</p>
-            <p class="description">
-              Image sources, where you keep one image, and we take care of the rest.
-            </p>
-          </div>
+      <div class="column-50">
+        <p class="content__tag">INDUSTRY EXPERTS</p>
+        <h1 class="content__title">Make your customers happy<br /> <small>with fast loading images</small></h1>
+        <p class="content__description">Pixboost Image CDN serves the responsive images using the best format from the
+          closest to
+          your user location.</p>
+        <p class="cta">
+          <a class="btn btn-lg btn-green" href="/customer/#/signup"
+            onclick="window.trackLink('Hero submit','signup_hero')">SIGN UP</a>
+        </p>
+      </div>
+      <div class="column-50">
+        <div class="video">
+          <object type="image/svg+xml" data="/img/v2/homepage/animation-js.svg"></object>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="who-we-are" class="no-frame">
+  <section id="how-it-works" class="top-curve">
+    <div class="content">
+      <div class="intro">
+        <div class="heading">
+          <p class="content__tag">HOW IT WORKS</p>
+          <h2 class="content__title">End to End image solution for your website</h2>
+        </div>
+        <p class="content__description">
+          In addition to API you also get Content Delivery Network with 144 locations worldwide, so the images are
+          served from the closest location to your client.
+          Your web developers would also love our front end integration with popular frameworks like React.
+        </p>
+      </div>
+      <div class="infographic">
+        <div class="card">
+          <div class="card__image">
+            <div class="arrow arrow--empty"></div>
+            <img src="/img/v2/homepage/infographic/user-loading-images.png" alt="user loading images" />
+            <div class="arrow arrow--right"></div>
+          </div>
+          <p class="heading">User's Browser</p>
+          <p class="description">
+            Optimised images across all screen sizes and devices.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <div class="arrow arrow--left"></div>
+            <img src="/img/v2/homepage/infographic/content-delivery-network.png" alt="content delivery network" />
+            <div class="arrow arrow--right"></div>
+          </div>
+          <p class="heading">Content Delivery Network</p>
+          <p class="description">
+            Serve from the closest to user location from CDN immediately. 140+ locations all over the World.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <div class="arrow arrow--left"></div>
+            <img src="/img/v2/homepage/infographic/image-api.png" alt="image api" />
+            <div class="arrow arrow--right"></div>
+          </div>
+          <p class="heading">Image API</p>
+          <p class="description">
+            Pixboost downloads image, optimises / transforms it on CDN for 30 days.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <div class="arrow arrow--left"></div>
+            <img src="/img/v2/homepage/infographic/images-source.png" alt="images source" />
+            <div class="arrow arrow--empty"></div>
+          </div>
+          <p class="heading">Your Image Sources</p>
+          <p class="description">
+            Image sources, where you keep one image, and we take care of the rest.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="who-we-are" class="top-curve bottom-curve">
     <div class="content">
       <p class="title">WHO WE ARE</p>
       <h2>Easy to use Image Processing API</h2>
